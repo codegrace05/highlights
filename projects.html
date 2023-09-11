@@ -10,27 +10,33 @@
     <title>Projects</title>
 </head>
 <body>
-    <div class="mobile-nav-container-project">
-        <div class="logo">Om Bhojane</div>
-        <!-- Hamburger icon for toggling the menu -->
-        <div class="hamburger-menu-project">
-            <div class="hamburger-icon-project" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <nav id="desktop-nav">
+    <div class="logo">Om Bhojane</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="ideas.html">Ideas</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-
-    <!-- Mobile navigation menu -->
-    <div class="mobile-menu-project">
-        <ul class="nav-links-project">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ideas.html">Ideas</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Om Bhojane</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="ideas.html" onclick="toggleMenu()">Ideas</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
     </div>
+  </nav>
 
       <div class="container-hr">
         <hr class="centered-hr">
